@@ -1,0 +1,12 @@
+<div class="list-container">
+  <div class="workout-row" *ngFor="let workout of workouts" (click)="onClickingWorkout(workout)">
+    <div class="workout-content">
+      <h3>{{workout}}</h3>
+    </div>
+  </div>
+  <div class="workout-row">
+    <div class="workout-content">
+      <h3>+ Add New Workout</h3>
+    </div>
+  </div>
+</div>

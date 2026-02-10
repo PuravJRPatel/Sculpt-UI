@@ -1,0 +1,45 @@
+$spacing: 20px;
+$row-height: 75px;
+$row-spacing: 20px;
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  padding: $row-spacing;
+  gap: $row-spacing;
+}
+
+.exercise-panel{
+  margin-top: $spacing;
+  margin-left: $spacing;
+  flex: 0 0 $row-height;
+  width: 40%;
+  flex-direction: column;
+  background-color: #44488b;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exercise-name{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 10px 0;
+}
+.exercise-row {
+  flex: 0 0 $row-height;
+  background-color: #44488b;
+  border-radius: 20px;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: #6D70AC;
+    cursor: pointer;
+  }
+}
