@@ -1,0 +1,37 @@
+$row-spacing: 20px;
+$row-height: 75px;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  padding: $row-spacing;
+  gap: $row-spacing;
+}
+
+.workout-row {
+  flex: 0 0 $row-height;
+  background-color: #44488b;
+  border-radius: 20px;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: #6D70AC;
+    cursor: pointer;
+  }
+}
+
+.workout-content{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 10px 0;
+}

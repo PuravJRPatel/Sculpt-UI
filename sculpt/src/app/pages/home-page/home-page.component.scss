@@ -1,0 +1,45 @@
+$spacing: 20px;
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.header{
+  flex: 0 1 auto;
+}
+
+.main-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 1000;
+  color: #44488b;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0;
+  -webkit-text-stroke: 2px #D5C9DF;
+}
+
+.content-area{
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+  padding: 0 $spacing $spacing $spacing;
+  gap: $spacing;
+}
+
+.left-panel{
+  flex: 0 0 calc(70% - #{$spacing});
+  background-color: #D5C9DF;
+  overflow-y: scroll;
+  border-radius: 20px;
+}
+
+.right-panel{
+  flex: 0 0 30%;
+  background-color: #D5C9DF;
+  border-radius: 20px;
+}

@@ -1,0 +1,66 @@
+$spacing: 20px;
+$row-height: 75px;
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.header{
+  flex: 0 1 auto;
+}
+
+.workout-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 1000;
+  color: #44488b;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 10px 0;
+  -webkit-text-stroke: 2px #D5C9DF;
+}
+
+.content-area{
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 $spacing $spacing $spacing;
+  gap: $spacing;
+}
+
+.log-panel{
+  flex: 0 0 $row-height;
+  width: 40%;
+  flex-direction: column;
+  background-color: #44488b;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: #6D70AC;
+    cursor: pointer;
+  }
+}
+
+.main-panel{
+  flex: 1;
+  background-color: #D5C9DF;
+  overflow-y: scroll;
+  border-radius: 20px;
+}
+
+.log-content{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 10px 0;
+}
