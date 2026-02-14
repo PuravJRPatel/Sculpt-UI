@@ -44,6 +44,7 @@ $row-height: 75px;
   justify-content: center;
   align-items: center;
   transition: transform 0.2s ease;
+  border: #F0F4EF 4px solid;
 
   &:hover {
     transform: scale(1.01);
