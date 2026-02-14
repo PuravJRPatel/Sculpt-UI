@@ -28,13 +28,13 @@ $row-spacing: 20px;
   padding: 10px 0;
 }
 .exercise-row {
-  flex: 0 0 $row-height;
-  background-color: #44488b;
+  flex: 0 0 0;
   border-radius: 20px;
   color: white;
   padding: 0 20px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   transition: transform 0.2s ease;
 
   &:hover {
@@ -42,4 +42,27 @@ $row-spacing: 20px;
     background-color: #6D70AC;
     cursor: pointer;
   }
+}
+
+.exercise-row {
+  background-color: #44488b;
+  border: #F0F4EF 4px solid;
+}
+
+.exercise-attributes{
+  width: 50%;
+}
+
+.set-row {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #1E2019;
+  border-radius: 20px;
+  padding: 0 20px;
+  margin-bottom: $spacing;
+  justify-content: space-around;
+  display: flex;
+  gap: $spacing;
+  align-items: flex-start;
+  border: #F0F4EF 4px solid;
 }
